@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
+using Application.Calculator;
 using Microsoft.AspNetCore.Mvc;
 using Presentation.ViewModel;
 
@@ -13,16 +14,16 @@ namespace Presentation.Controllers
    
     public class SalesmanController : Controller
     {
-        public SalesmanController()
+        private readonly ICalculator _calculator = null;
+        public SalesmanController(ICalculator calculator)
         {
-
+            _calculator = calculator;
         }
 
         [HttpGet]
         public IActionResult MainPage()
         {
             return View();
-
         }
 
         [HttpPost]

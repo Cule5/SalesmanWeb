@@ -24,3 +24,5 @@ C:\Users\Dominik\Desktop\BIAI\BIAI\Presentation\bin\Debug\netcoreapp2.1\Presenta
 C:\Users\Dominik\Desktop\BIAI\BIAI\Presentation\obj\Debug\netcoreapp2.1\Presentation.Views.pdb
 C:\Users\Dominik\Desktop\BIAI\BIAI\Presentation\obj\Debug\netcoreapp2.1\Presentation.csproj.CopyComplete
 C:\Users\Dominik\Desktop\BIAI\BIAI\Presentation\obj\Debug\netcoreapp2.1\Razor\Views\Salesman\MainPage.g.cshtml.cs
+C:\Users\Dominik\Desktop\BIAI\BIAI\Presentation\bin\Debug\netcoreapp2.1\Application.dll
+C:\Users\Dominik\Desktop\BIAI\BIAI\Presentation\bin\Debug\netcoreapp2.1\Application.pdb
