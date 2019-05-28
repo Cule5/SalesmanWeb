@@ -10,3 +10,5 @@ C:\Users\Dominik\Desktop\BIAI\BIAI\Infrastructure\obj\Debug\netcoreapp2.1\Infras
 C:\Users\Dominik\Desktop\BIAI\BIAI\Infrastructure\obj\Debug\netcoreapp2.1\Infrastructure.csproj.CopyComplete
 C:\Users\Dominik\Desktop\BIAI\BIAI\Infrastructure\obj\Debug\netcoreapp2.1\Infrastructure.dll
 C:\Users\Dominik\Desktop\BIAI\BIAI\Infrastructure\obj\Debug\netcoreapp2.1\Infrastructure.pdb
+C:\Users\Dominik\Desktop\BIAI\BIAI\Infrastructure\bin\Debug\netcoreapp2.1\Microsoft.AspNetCore.Http.Features.dll
+C:\Users\Dominik\Desktop\BIAI\BIAI\Infrastructure\bin\Debug\netcoreapp2.1\Microsoft.AspNetCore.Http.Features.xml

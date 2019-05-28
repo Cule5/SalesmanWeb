@@ -1,7 +1,13 @@
 ﻿@model Application.ViewModel.FileViewModel
-<form asp-controller="Salesman" asp-action="MainPage" method="post" enctype="multipart/form-data">
-    <input type="file" asp-for="File" />
-    <input type="submit" />
 
-</form>
+<link href="css/MainPageStyle.css" rel="stylesheet" type="text/css"/>
+
+<div class="fileForm">
+    <form asp-controller="Salesman" asp-action="MainPage" method="post" enctype="multipart/form-data">
+        <input type="file" asp-for="File" class="fileButton" />
+        <input type="submit" class="submitButton" />
+
+    </form>
+
+</div>
 
