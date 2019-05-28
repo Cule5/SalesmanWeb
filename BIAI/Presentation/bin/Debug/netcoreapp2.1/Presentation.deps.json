@@ -25,6 +25,7 @@
       "Presentation/1.0.0": {
         "dependencies": {
           "Application": "1.0.0",
+          "Infrastructure": "1.0.0",
           "Microsoft.AspNetCore.App": "2.1.1",
           "Microsoft.AspNetCore.Razor.Design": "2.1.2",
           "Microsoft.NETCore.App": "2.1.0",
@@ -521,6 +522,17 @@
         },
         "compile": {
           "Application.dll": {}
+        }
+      },
+      "Infrastructure/1.0.0": {
+        "dependencies": {
+          "Application": "1.0.0"
+        },
+        "runtime": {
+          "Infrastructure.dll": {}
+        },
+        "compile": {
+          "Infrastructure.dll": {}
         }
       },
       "Microsoft.AspNet.WebApi.Client/5.2.6": {
@@ -3654,6 +3666,11 @@
       "hashPath": "system.linq.parallel.4.3.0.nupkg.sha512"
     },
     "Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Infrastructure/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

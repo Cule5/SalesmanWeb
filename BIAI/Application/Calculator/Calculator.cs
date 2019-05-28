@@ -11,10 +11,10 @@ namespace Application.Calculator
     
     public class Calculator:ICalculator
     {
-        private  Stream _stream = null;
+        
         private readonly IAlgorithmService _algorithmService = null;
 
-        Calculator(IAlgorithmService algorithmService)
+        public Calculator(IAlgorithmService algorithmService)
         {
             _algorithmService = algorithmService;
         }

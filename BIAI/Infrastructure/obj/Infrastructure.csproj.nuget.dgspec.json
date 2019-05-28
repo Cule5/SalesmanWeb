@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Dominik\\Desktop\\BIAI\\BIAI\\Infrastructure\\Infrastructure.csproj": {}
+    "C:\\Users\\Dominik\\Desktop\\BIAI\\SalesmanWeb\\BIAI\\Infrastructure\\Infrastructure.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Dominik\\Desktop\\BIAI\\BIAI\\Application\\Application.csproj": {
+    "C:\\Users\\Dominik\\Desktop\\BIAI\\SalesmanWeb\\BIAI\\Application\\Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Dominik\\Desktop\\BIAI\\BIAI\\Application\\Application.csproj",
+        "projectUniqueName": "C:\\Users\\Dominik\\Desktop\\BIAI\\SalesmanWeb\\BIAI\\Application\\Application.csproj",
         "projectName": "Application",
-        "projectPath": "C:\\Users\\Dominik\\Desktop\\BIAI\\BIAI\\Application\\Application.csproj",
+        "projectPath": "C:\\Users\\Dominik\\Desktop\\BIAI\\SalesmanWeb\\BIAI\\Application\\Application.csproj",
         "packagesPath": "C:\\Users\\Dominik\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Dominik\\Desktop\\BIAI\\BIAI\\Application\\obj\\",
+        "outputPath": "C:\\Users\\Dominik\\Desktop\\BIAI\\SalesmanWeb\\BIAI\\Application\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -56,14 +56,14 @@
         }
       }
     },
-    "C:\\Users\\Dominik\\Desktop\\BIAI\\BIAI\\Infrastructure\\Infrastructure.csproj": {
+    "C:\\Users\\Dominik\\Desktop\\BIAI\\SalesmanWeb\\BIAI\\Infrastructure\\Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Dominik\\Desktop\\BIAI\\BIAI\\Infrastructure\\Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\Dominik\\Desktop\\BIAI\\SalesmanWeb\\BIAI\\Infrastructure\\Infrastructure.csproj",
         "projectName": "Infrastructure",
-        "projectPath": "C:\\Users\\Dominik\\Desktop\\BIAI\\BIAI\\Infrastructure\\Infrastructure.csproj",
+        "projectPath": "C:\\Users\\Dominik\\Desktop\\BIAI\\SalesmanWeb\\BIAI\\Infrastructure\\Infrastructure.csproj",
         "packagesPath": "C:\\Users\\Dominik\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Dominik\\Desktop\\BIAI\\BIAI\\Infrastructure\\obj\\",
+        "outputPath": "C:\\Users\\Dominik\\Desktop\\BIAI\\SalesmanWeb\\BIAI\\Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -82,8 +82,8 @@
         "frameworks": {
           "netcoreapp2.1": {
             "projectReferences": {
-              "C:\\Users\\Dominik\\Desktop\\BIAI\\BIAI\\Application\\Application.csproj": {
-                "projectPath": "C:\\Users\\Dominik\\Desktop\\BIAI\\BIAI\\Application\\Application.csproj"
+              "C:\\Users\\Dominik\\Desktop\\BIAI\\SalesmanWeb\\BIAI\\Application\\Application.csproj": {
+                "projectPath": "C:\\Users\\Dominik\\Desktop\\BIAI\\SalesmanWeb\\BIAI\\Application\\Application.csproj"
               }
             }
           }

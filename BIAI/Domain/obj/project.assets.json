@@ -694,11 +694,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Dominik\\Desktop\\BIAI\\BIAI\\Domain\\Domain.csproj",
+      "projectUniqueName": "C:\\Users\\Dominik\\Desktop\\BIAI\\SalesmanWeb\\BIAI\\Domain\\Domain.csproj",
       "projectName": "Domain",
-      "projectPath": "C:\\Users\\Dominik\\Desktop\\BIAI\\BIAI\\Domain\\Domain.csproj",
+      "projectPath": "C:\\Users\\Dominik\\Desktop\\BIAI\\SalesmanWeb\\BIAI\\Domain\\Domain.csproj",
       "packagesPath": "C:\\Users\\Dominik\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Dominik\\Desktop\\BIAI\\BIAI\\Domain\\obj\\",
+      "outputPath": "C:\\Users\\Dominik\\Desktop\\BIAI\\SalesmanWeb\\BIAI\\Domain\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

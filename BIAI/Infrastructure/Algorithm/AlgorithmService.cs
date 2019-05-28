@@ -7,7 +7,7 @@ using Application.ViewModel;
 
 namespace Infrastructure.Algorithm
 {
-    class AlgorithmService:IAlgorithmService
+    public class AlgorithmService:IAlgorithmService
     {
         public Task Execute(FileViewModel fileViewModel)
         {
