@@ -71,15 +71,14 @@ namespace Domain.Path
         private double CalculateDistance()
         {
             double result = 0;
-
+            for (int i = 0; i < Cities.Count; ++i)
+                result += Cities[i].DistanceToCity(Cities[(i + 1) % Cities.Count]);
             return result;
         }
 
         private double CalculateFitness()
         {
-            double result = 0;
-
-            return result;
+            return 1 / Distance;
         }
         
     }
