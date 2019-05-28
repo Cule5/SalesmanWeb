@@ -54,18 +54,18 @@ namespace Domain.Path
 
         public Path Mutate()
         {
-            List<City.City> tmp = new List<City.City>(Cities);
+            List<City.City> tmpList = new List<City.City>(Cities);
 
             if (Random.NextDouble() < Environment.Environment.MutateRate)
             {
                 int i = Random.Next(0, Cities.Count);
                 int j = Random.Next(0, Cities.Count);
-                City.City v = tmp[i];
-                tmp[i] = tmp[j];
-                tmp[j] = v;
+                City.City v = tmpList[i];
+                tmpList[i] = tmpList[j];
+                tmpList[j] = v;
             }
 
-            return new Path(tmp);
+            return new Path(tmpList);
         }
 
         private double CalculateDistance()

@@ -4,8 +4,9 @@ using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 using Application.Calculator;
+using Application.ViewModel;
 using Microsoft.AspNetCore.Mvc;
-using Presentation.ViewModel;
+
 
 // For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -29,8 +30,7 @@ namespace Presentation.Controllers
         [HttpPost]
         public IActionResult MainPage(FileViewModel file)
         {
-            var name = file.File.OpenReadStream();
-            StreamReader stream = new StreamReader(name);
+            _calculator.RunAlgorithm(file);
             
             return View();
         }

@@ -4,6 +4,7 @@ using System.IO;
 using System.Text;
 using System.Threading.Tasks;
 using Application.Interfaces.Infrastructure;
+using Application.ViewModel;
 
 namespace Application.Calculator
 {
@@ -18,14 +19,10 @@ namespace Application.Calculator
             _algorithmService = algorithmService;
         }
         
-        public void LoadStream(Stream stream)
-        {
-            _stream = stream;
-        }
 
-        public async Task RunAlgorithm()
+        public async Task RunAlgorithm(FileViewModel fileViewModel)
         {
-
+            await _algorithmService.Execute(fileViewModel);
         }
     }
 }

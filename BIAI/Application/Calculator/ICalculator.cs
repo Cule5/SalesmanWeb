@@ -3,12 +3,12 @@ using System.Collections.Generic;
 using System.IO;
 using System.Text;
 using System.Threading.Tasks;
+using Application.ViewModel;
 
 namespace Application.Calculator
 {
     public interface ICalculator
     {
-        void LoadStream(Stream stream);
-        Task RunAlgorithm();
+        Task RunAlgorithm(FileViewModel fileViewModel);
     }
 }
