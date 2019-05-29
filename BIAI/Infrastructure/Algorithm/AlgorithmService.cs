@@ -6,20 +6,26 @@ using System.Threading.Tasks;
 using Application.Interfaces.Infrastructure;
 using Application.ViewModel;
 using Domain.City;
-using Domain.Path;
+using Path= Domain.Path.Path;
+using Domain.Population;
+using Domain.Environment;
+using Environment = Domain.Environment.Environment;
+
 
 
 namespace Infrastructure.Algorithm
 {
     public class AlgorithmService:IAlgorithmService
     {
-        private Domain.Path.Path _path = null;
+        private Path _path = null;
+        private Population _population = null;
         
         
 
         public async Task Execute(FileViewModel fileViewModel)
         {
             await SetCities(fileViewModel);
+            _population = Population.RandomizePopulation(_path, Environment.PopulationSize);
 
 
         }
@@ -27,7 +33,6 @@ namespace Infrastructure.Algorithm
 
         private async Task SetCities(FileViewModel fileViewModel)
         {
-            
             using (Stream stream=fileViewModel.File.OpenReadStream())
             {
                 using (StreamReader streamReader=new StreamReader(stream))

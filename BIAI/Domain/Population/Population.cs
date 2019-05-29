@@ -13,7 +13,7 @@ namespace Domain.Population
         public Population(List<Path.Path>paths)
         {
             Paths = paths;
-            
+            MaxFitness = CalculateMaxFitness();
         }
 
         private double CalculateMaxFitness()
@@ -30,5 +30,14 @@ namespace Domain.Population
             }
             return null;
         }
+
+        public static Population RandomizePopulation(Path.Path path,int populationSize)
+        {
+            List<Path.Path> pathList = new List<Path.Path>();
+            for (int i = 0; i < populationSize; ++i)
+                pathList.Add(path.Shuffle());
+            return new Population(pathList);
+        }
+       
     }
 }
