@@ -56,3 +56,5 @@ C:\Users\Dominik\Desktop\BIAI\SalesmanWeb\BIAI\Presentation\obj\Debug\netcoreapp
 C:\Users\Dominik\Desktop\BIAI\SalesmanWeb\BIAI\Presentation\obj\Debug\netcoreapp2.1\Presentation.pdb
 C:\Users\Dominik\Desktop\BIAI\SalesmanWeb\BIAI\Presentation\bin\Debug\netcoreapp2.1\Infrastructure.dll
 C:\Users\Dominik\Desktop\BIAI\SalesmanWeb\BIAI\Presentation\bin\Debug\netcoreapp2.1\Infrastructure.pdb
+C:\Users\Dominik\Desktop\BIAI\SalesmanWeb\BIAI\Presentation\bin\Debug\netcoreapp2.1\Domain.dll
+C:\Users\Dominik\Desktop\BIAI\SalesmanWeb\BIAI\Presentation\bin\Debug\netcoreapp2.1\Domain.pdb

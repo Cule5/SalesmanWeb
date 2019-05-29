@@ -1,11 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Security.Cryptography.X509Certificates;
 
 namespace Domain.Path
 {
-    class Path
+    public class Path
     {
         public IList<City.City> Cities { private set; get; }
         public double Distance { private set; get; }

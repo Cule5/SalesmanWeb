@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Domain.City
 {
-    class City
+    public class City
     {
         public string CityName {private set; get; }
         public double ParameterX {private set; get; }

@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Domain.Environment
 {
-    static class Environment
+    public static class Environment
     {
         public static double MutateRate { set; get; }
         public static int PopulationSize { set; get; }

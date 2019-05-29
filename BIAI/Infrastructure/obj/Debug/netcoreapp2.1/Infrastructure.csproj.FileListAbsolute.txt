@@ -26,3 +26,5 @@ C:\Users\Dominik\Desktop\BIAI\SalesmanWeb\BIAI\Infrastructure\obj\Debug\netcorea
 C:\Users\Dominik\Desktop\BIAI\SalesmanWeb\BIAI\Infrastructure\obj\Debug\netcoreapp2.1\Infrastructure.csproj.CopyComplete
 C:\Users\Dominik\Desktop\BIAI\SalesmanWeb\BIAI\Infrastructure\obj\Debug\netcoreapp2.1\Infrastructure.dll
 C:\Users\Dominik\Desktop\BIAI\SalesmanWeb\BIAI\Infrastructure\obj\Debug\netcoreapp2.1\Infrastructure.pdb
+C:\Users\Dominik\Desktop\BIAI\SalesmanWeb\BIAI\Infrastructure\bin\Debug\netcoreapp2.1\Domain.dll
+C:\Users\Dominik\Desktop\BIAI\SalesmanWeb\BIAI\Infrastructure\bin\Debug\netcoreapp2.1\Domain.pdb

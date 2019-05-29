@@ -5,12 +5,12 @@ using System.Text;
 
 namespace Domain.Population
 {
-    class Population
+    public class Population
     {
-        public List<Domain.Path.Path> Paths {private set; get; }
+        public List<Path.Path> Paths {private set; get; }
         public double MaxFitness {private set; get; }
 
-        public Population(List<Domain.Path.Path>paths)
+        public Population(List<Path.Path>paths)
         {
             Paths = paths;
             
