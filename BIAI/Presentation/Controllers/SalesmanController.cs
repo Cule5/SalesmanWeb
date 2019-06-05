@@ -28,9 +28,9 @@ namespace Presentation.Controllers
         }
 
         [HttpPost]
-        public IActionResult MainPage(FileViewModel fileViewModel)
+        public IActionResult MainPage(AlgorithmViewModel algorithmViewModel)
         {
-            _calculator.RunAlgorithm(fileViewModel);
+            _calculator.RunAlgorithm(algorithmViewModel);
             
             return View();
         }

@@ -24,52 +24,48 @@ namespace Domain.Path
         {
             List<City.City> list = new List<City.City>(Cities);
             
-            int n = list.Count;
+            var counter = list.Count;
 
-            while (n > 1)
+            while (counter > 1)
             {
-                --n;
-                int k = Random.Next(n + 1);
-                City.City v = list[k];
-                list[k] = list[n];
-                list[n] = v;
+                --counter;
+                var k = Random.Next(counter + 1);
+                var tmpCity = list[k];
+                list[k] = list[counter];
+                list[counter] = tmpCity;
             }
             return new Path(list);
         }
 
-        public Path Crossover(Path path)
+        public Domain.Path.Path Crossover(Domain.Path.Path path)
         {
-            
-            int i = Random.Next(0, path.Cities.Count);
-            int j = Random.Next(i, path.Cities.Count);
-            List<City.City> rangedList = Cities.ToList().GetRange(i, j - i + 1);
+            int firstIndex = Random.Next(0, path.Cities.Count);
+            int secondIndex = Random.Next(firstIndex, path.Cities.Count);
+            List<City.City> rangedList = this.Cities.ToList().GetRange(firstIndex, secondIndex - firstIndex + 1);
             List<City.City> ms = path.Cities.Except(rangedList).ToList();
-            List<City.City> c = ms.Take(i)
+            List<City.City> resultList = ms.Take(firstIndex)
                 .Concat(rangedList)
-                .Concat(ms.Skip(i))
+                .Concat(ms.Skip(firstIndex))
                 .ToList();
-            return new Path(c);
+            return new Path(resultList);
         }
 
-        public Path Mutate()
+
+        public void Mutate()
         {
-            List<City.City> tmpList = new List<City.City>(Cities);
-
-            if (Random.NextDouble() < Environment.Environment.MutateRate)
+            if (Random.NextDouble() < Environment.Environment.MutationRate)
             {
-                int i = Random.Next(0, Cities.Count);
-                int j = Random.Next(0, Cities.Count);
-                City.City v = tmpList[i];
-                tmpList[i] = tmpList[j];
-                tmpList[j] = v;
+                var i = Random.Next(0, Cities.Count);
+                var j = Random.Next(0, Cities.Count);
+                var city = Cities[i];
+                Cities[i] = Cities[j];
+                Cities[j] = city;
             }
-
-            return new Path(tmpList);
         }
 
         private double CalculateDistance()
         {
-            double result = 0;
+            var result = 0.0;
             for (int i = 0; i < Cities.Count; ++i)
                 result += Cities[i].DistanceToCity(Cities[(i + 1) % Cities.Count]);
             return result;

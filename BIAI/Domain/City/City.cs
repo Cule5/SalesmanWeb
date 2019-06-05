@@ -6,13 +6,11 @@ namespace Domain.City
 {
     public class City
     {
-        public string CityName {private set; get; }
         public double ParameterX {private set; get; }
         public double ParameterY {private set; get; }
 
-        public City(string cityName,double parameterX,double parameterY)
+        public City(double parameterX,double parameterY)
         {
-            CityName = cityName;
             ParameterX = parameterX;
             ParameterY = parameterY;
         }

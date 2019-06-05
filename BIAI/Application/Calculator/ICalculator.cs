@@ -9,6 +9,6 @@ namespace Application.Calculator
 {
     public interface ICalculator
     {
-        Task RunAlgorithm(FileViewModel fileViewModel);
+        Task<ResultViewModel> RunAlgorithm(AlgorithmViewModel algorithmViewModel);
     }
 }
