@@ -3,15 +3,27 @@
 <link href="~/css/MainPageStyle.css" rel="stylesheet" type="text/css"/>
 
 <div class="fileForm">
-    <form asp-controller="Salesman" asp-action="MainPage" method="post" enctype="multipart/form-data">
-        <input type="file" asp-for="File" class="fileButton" />
-        <input type="submit" class="submitButton" />
+    <div class="parameterForm" >
+        <form asp-controller="Salesman" asp-action="ResultPage" method="post" enctype="multipart/form-data">
+            <input type="file" asp-for="File" class="fileButton"/>
+            <br/>
+            <label asp-for="PopulationSize" ></label>
+            <input type="text" asp-for="PopulationSize"/>
+            <br/>
+            <label asp-for="TournamentSize"></label>
+            <input type="text" asp-for="TournamentSize"/>
+            <br/>
+            <label asp-for="GenerationSize"></label>
+            <input type="text" asp-for="GenerationSize"/>
+            <br/>
+            <label asp-for="MutationRate"></label>
+            <input type="text" asp-for="MutationRate"/>
+            <br/>
+            <input type="submit" class="submitButton" value="Zatwierdź"/>
 
-    </form>
-    <div >
-        
-
+        </form>
     </div>
+   
 
 </div>
 

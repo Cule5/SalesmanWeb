@@ -49,3 +49,8 @@
     position:relative;
     top:1px;
 }
+
+.parameterForm {
+    position: absolute;
+    text-align: center;
+}

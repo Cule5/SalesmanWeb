@@ -22,21 +22,29 @@ namespace Infrastructure.Algorithm
         
         
 
-        public async Task<ResultViewModel> Execute(AlgorithmViewModel algorithmViewModel)
+        public ResultViewModel Execute(AlgorithmViewModel algorithmViewModel)
         {
-            var cities = await SetCities(algorithmViewModel);
+            var cities = SetCities(algorithmViewModel);
             Environment.CitySize = cities.Count;
+            Environment.MutationRate = algorithmViewModel.MutationRate;
+            Environment.PopulationSize = algorithmViewModel.PopulationSize;
+            Environment.TournamentSize = algorithmViewModel.TournamentSize;
+            Environment.GenerationSize = algorithmViewModel.GenerationSize;
             _population=Population.CreatePopulation(new Path(cities),Environment.PopulationSize);
-            for (int i = 0; i < 5; ++i)
+            for (int i = 0; i < Environment.GenerationSize; ++i)
             {
                 _population = _population.EvolvePopulation();
             }
 
-            var result = _population.FindBestPath();
+            var bestPath = _population.FindBestPath();
+            var result=new ResultViewModel(){BestPath =bestPath };
+            return result;
         }
+        
 
-        private async Task<List<City>> SetCities(AlgorithmViewModel algorithmViewModel)
+        private List<City> SetCities(AlgorithmViewModel algorithmViewModel)
         {
+
             var resultList=new List<City>();
             using (Stream stream=algorithmViewModel.File.OpenReadStream())
             {
@@ -45,11 +53,11 @@ namespace Infrastructure.Algorithm
                     string line = null;
                     while ((line= streamReader.ReadLine())!=null)
                     {
-                        string[] splitString = line.Split(' ');
-                        double paramX = double.Parse(splitString[0]);
-                        double paramY = double.Parse(splitString[1]);
+                        var splitString = line.Split(' ');
+                        var paramX = double.Parse(splitString[0]);
+                        var paramY = double.Parse(splitString[1]);
                         
-                        City newCity=new City(paramX,paramY);
+                        var newCity=new City(paramX,paramY);
                         resultList.Add(newCity);
                     }
                 }

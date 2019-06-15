@@ -20,5 +20,10 @@ namespace Domain.City
             return Math.Sqrt(Math.Pow((city.ParameterX - ParameterX), 2) + Math.Pow((city.ParameterY - ParameterY), 2));
         }
 
+        public override string ToString()
+        {
+            var resultString = $"{ParameterX}, {ParameterY}";
+            return resultString;
+        }
     }
 }

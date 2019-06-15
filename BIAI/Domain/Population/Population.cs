@@ -50,29 +50,28 @@ namespace Domain.Population
             var pathList=new List<Path.Path>();
             for (int i = 0; i < Environment.Environment.TournamentSize; ++i)
             {
-                var randomId = (int)(Random.NextDouble() * this.Paths.Count);
-                pathList.Add(Paths[i]);
+                var randomIndex = (int)(Random.NextDouble() * this.Paths.Count);
+               
+                pathList.Add(this.Paths[randomIndex]);
                 
             }
-            var fittestPath= new Population(pathList).FindBestPath();
+            var tmpPopulation=new Population(pathList);
+            var fittestPath= tmpPopulation.FindBestPath();
             return fittestPath;
         }
 
         public Population EvolvePopulation()
         {
             var pathList=new List<Path.Path>();
-            for (int i = 0; i < this.Paths.Count; ++i)
+            for (int i = 0; i < Environment.Environment.PopulationSize; ++i)
             {
                 var firstPath = this.TournamentSelection();
                 var secondPath = this.TournamentSelection();
                 var child = firstPath.Crossover(secondPath);
+                child.Mutate();
                 pathList.Add(child);
             }
 
-            foreach (var path in pathList)
-            {
-                path.Mutate();
-            }
             
             return new Population(pathList);
         }

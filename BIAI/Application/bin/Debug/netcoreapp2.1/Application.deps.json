@@ -8,10 +8,16 @@
     ".NETCoreApp,Version=v2.1": {
       "Application/1.0.0": {
         "dependencies": {
+          "Domain": "1.0.0",
           "Microsoft.AspNetCore.Http.Features": "2.1.1.0"
         },
         "runtime": {
           "Application.dll": {}
+        }
+      },
+      "Domain/1.0.0": {
+        "runtime": {
+          "Domain.dll": {}
         }
       },
       "Microsoft.AspNetCore.Http.Features/2.1.1.0": {
@@ -26,6 +32,11 @@
   },
   "libraries": {
     "Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Domain/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

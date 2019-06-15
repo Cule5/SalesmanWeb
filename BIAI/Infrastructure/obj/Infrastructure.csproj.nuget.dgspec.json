@@ -29,7 +29,11 @@
         },
         "frameworks": {
           "netcoreapp2.1": {
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\Dominik\\Desktop\\BIAI\\SalesmanWeb\\BIAI\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\Dominik\\Desktop\\BIAI\\SalesmanWeb\\BIAI\\Domain\\Domain.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

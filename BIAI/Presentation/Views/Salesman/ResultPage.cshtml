@@ -1,0 +1,25 @@
+﻿@model Application.ViewModel.ResultViewModel
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>ResultPage</title>
+</head>
+<body>
+@if (Model != null)
+{
+    foreach (var city in Model.BestPath.Cities)
+    {
+        <p>
+            @city.ToString()
+        </p>
+        <br/>
+    }
+}
+</body>
+</html>

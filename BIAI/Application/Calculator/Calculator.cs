@@ -21,9 +21,11 @@ namespace Application.Calculator
         }
         
 
-        public async Task<ResultViewModel> RunAlgorithm(AlgorithmViewModel algorithmViewModel)
+        public  Task<ResultViewModel> RunAlgorithm(AlgorithmViewModel algorithmViewModel)
         {
-            await _algorithmService.Execute(algorithmViewModel);
+            return  Task<ResultViewModel>.Factory.StartNew(() =>_algorithmService.Execute(algorithmViewModel));
         }
+
+
     }
 }

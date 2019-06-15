@@ -8,6 +8,6 @@ namespace Application.Interfaces.Infrastructure
 {
     public interface IAlgorithmService
     {
-        Task<ResultViewModel> Execute(AlgorithmViewModel algorithmViewModel);
+        ResultViewModel Execute(AlgorithmViewModel algorithmViewModel);
     }
 }
