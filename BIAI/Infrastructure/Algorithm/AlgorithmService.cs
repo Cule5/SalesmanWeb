@@ -44,7 +44,6 @@ namespace Infrastructure.Algorithm
 
         private List<City> SetCities(AlgorithmViewModel algorithmViewModel)
         {
-
             var resultList=new List<City>();
             using (Stream stream=algorithmViewModel.File.OpenReadStream())
             {

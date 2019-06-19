@@ -28,25 +28,27 @@ namespace Presentation.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> ResultPage(AlgorithmViewModel algorithmViewModel)
+        public async Task<IActionResult> MainPage(AlgorithmViewModel algorithmViewModel)
         {
             ResultViewModel resultViewModel = null;
             try
             {
-                resultViewModel= await _calculator.RunAlgorithm(algorithmViewModel);
+                resultViewModel = await _calculator.RunAlgorithm(algorithmViewModel);
             }
             catch (Exception ex)
             {
                 
             }
 
-
-            return View(resultViewModel);
+            return View("ResultPage", resultViewModel);
         }
 
+        [HttpGet]
         public IActionResult ResultPage()
         {
             return View();
         }
+
+        
     }
 }

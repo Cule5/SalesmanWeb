@@ -4,20 +4,25 @@
 
 <div class="fileForm">
     <div class="parameterForm" >
-        <form asp-controller="Salesman" asp-action="ResultPage" method="post" enctype="multipart/form-data">
+        <form asp-controller="Salesman" asp-action="MainPage" method="post" enctype="multipart/form-data">
             <input type="file" asp-for="File" class="fileButton"/>
+            <br/>
             <br/>
             <label asp-for="PopulationSize" ></label>
             <input type="text" asp-for="PopulationSize"/>
             <br/>
+            <br/>
             <label asp-for="TournamentSize"></label>
             <input type="text" asp-for="TournamentSize"/>
+            <br/>
             <br/>
             <label asp-for="GenerationSize"></label>
             <input type="text" asp-for="GenerationSize"/>
             <br/>
+            <br/>
             <label asp-for="MutationRate"></label>
             <input type="text" asp-for="MutationRate"/>
+            <br/>
             <br/>
             <input type="submit" class="submitButton" value="Zatwierdź"/>
 
